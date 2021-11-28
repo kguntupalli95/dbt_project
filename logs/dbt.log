@@ -1,0 +1,1083 @@
+2021-11-28 21:19:04.965187 (MainThread): Running with dbt=0.21.0
+2021-11-28 21:19:05.185252 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/ubuntu/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-28 21:19:05.185881 (MainThread): Tracking: tracking
+2021-11-28 21:19:05.195164 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4232e64520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42306dafa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42306dafd0>]}
+2021-11-28 21:19:05.209589 (MainThread): Partial parsing not enabled
+2021-11-28 21:19:05.218196 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:19:05.219234 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:19:05.247434 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:19:05.260577 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:19:05.261347 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:19:05.262622 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:19:05.283966 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:19:05.286276 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:19:05.287955 (MainThread): Parsing macros/core.sql
+2021-11-28 21:19:05.291504 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-28 21:19:05.293791 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-28 21:19:05.295415 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-28 21:19:05.296652 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-28 21:19:05.297977 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-28 21:19:05.299439 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-28 21:19:05.300944 (MainThread): Parsing macros/etc/query.sql
+2021-11-28 21:19:05.301894 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-28 21:19:05.303630 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-28 21:19:05.305178 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-28 21:19:05.313443 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-28 21:19:05.315930 (MainThread): Parsing macros/adapters/common.sql
+2021-11-28 21:19:05.368613 (MainThread): Parsing macros/materializations/test.sql
+2021-11-28 21:19:05.375169 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-28 21:19:05.385145 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-28 21:19:05.407501 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-28 21:19:05.417256 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-28 21:19:05.436376 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-28 21:19:05.438217 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-28 21:19:05.454791 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-28 21:19:05.456653 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-28 21:19:05.486488 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-28 21:19:05.493666 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-28 21:19:05.497719 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-28 21:19:05.504592 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-28 21:19:05.703856 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:19:05.718332 (MainThread): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:19:05.722794 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:19:05.727026 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:19:05.731470 (MainThread): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:19:05.768266 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '91eecd98-e9c8-4ac6-b5dc-d8ebe7bddc4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42305e6d60>]}
+2021-11-28 21:19:05.773480 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-11-28 21:19:05.773846 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '91eecd98-e9c8-4ac6-b5dc-d8ebe7bddc4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42305e6b20>]}
+2021-11-28 21:19:05.774110 (MainThread): Found 5 models, 0 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-28 21:19:05.775697 (MainThread): 
+2021-11-28 21:19:05.776139 (MainThread): Acquiring new redshift connection "master".
+2021-11-28 21:19:05.777320 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_dev".
+2021-11-28 21:19:05.796313 (ThreadPoolExecutor-0_0): Using redshift connection "list_dev".
+2021-11-28 21:19:05.796535 (ThreadPoolExecutor-0_0): On list_dev: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-28 21:19:05.796651 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-28 21:19:05.796736 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-11-28 21:19:15.807265 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'connection to server at "3.132.57.225", port 5439 failed: timeout expired
+'
+2021-11-28 21:19:15.807550 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-28 21:19:15.807643 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-11-28 21:19:15.807808 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-11-28 21:19:15.807892 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-11-28 21:19:15.807999 (ThreadPoolExecutor-0_0): On list_dev: No close available on handle
+2021-11-28 21:19:15.808830 (MainThread): Connection 'master' was properly closed.
+2021-11-28 21:19:15.808994 (MainThread): Connection 'list_dev' was properly closed.
+2021-11-28 21:19:15.809115 (MainThread): ERROR: Database Error
+  connection to server at "3.132.57.225", port 5439 failed: timeout expired
+  
+2021-11-28 21:19:15.809383 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4230611070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42305e6e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42305e4c40>]}
+2021-11-28 21:19:15.809660 (MainThread): Flushing usage events
+2021-11-28 21:20:30.130789 (MainThread): Running with dbt=0.21.0
+2021-11-28 21:20:30.344163 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/ubuntu/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-28 21:20:30.344791 (MainThread): Tracking: tracking
+2021-11-28 21:20:30.354032 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ccde2850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca655ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca655f40>]}
+2021-11-28 21:20:30.368419 (MainThread): Partial parsing not enabled
+2021-11-28 21:20:30.376842 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:20:30.377869 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:20:30.406243 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:20:30.419419 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:20:30.420217 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:20:30.421510 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:20:30.443039 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:20:30.445330 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:20:30.447064 (MainThread): Parsing macros/core.sql
+2021-11-28 21:20:30.450701 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-28 21:20:30.452947 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-28 21:20:30.454572 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-28 21:20:30.455773 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-28 21:20:30.457149 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-28 21:20:30.458623 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-28 21:20:30.460072 (MainThread): Parsing macros/etc/query.sql
+2021-11-28 21:20:30.461045 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-28 21:20:30.462788 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-28 21:20:30.464326 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-28 21:20:30.472675 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-28 21:20:30.475132 (MainThread): Parsing macros/adapters/common.sql
+2021-11-28 21:20:30.527807 (MainThread): Parsing macros/materializations/test.sql
+2021-11-28 21:20:30.534388 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-28 21:20:30.544357 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-28 21:20:30.566527 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-28 21:20:30.576546 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-28 21:20:30.595842 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-28 21:20:30.597707 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-28 21:20:30.614318 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-28 21:20:30.616156 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-28 21:20:30.645854 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-28 21:20:30.653024 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-28 21:20:30.656881 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-28 21:20:30.663735 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-28 21:20:30.863717 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:20:30.878257 (MainThread): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:20:30.882811 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:20:30.886995 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:20:30.891438 (MainThread): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:20:30.928324 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '73359d60-f4c3-4d3c-a5d4-5131104b7d67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca570d00>]}
+2021-11-28 21:20:30.933824 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-11-28 21:20:30.934271 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '73359d60-f4c3-4d3c-a5d4-5131104b7d67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca570ac0>]}
+2021-11-28 21:20:30.934553 (MainThread): Found 5 models, 0 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-28 21:20:30.936149 (MainThread): 
+2021-11-28 21:20:30.936595 (MainThread): Acquiring new redshift connection "master".
+2021-11-28 21:20:30.937763 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_dev".
+2021-11-28 21:20:30.965389 (ThreadPoolExecutor-0_0): Using redshift connection "list_dev".
+2021-11-28 21:20:30.966214 (ThreadPoolExecutor-0_0): On list_dev: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-28 21:20:30.966542 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-28 21:20:30.966646 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-11-28 21:20:30.990465 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'connection to server at "redshift-cluster-1.casf6a8nm5bv.us-east-2.redshift.amazonaws.com" (172.31.17.205), port 5439 failed: FATAL:  password authentication failed for user "aws_user"
+connection to server at "redshift-cluster-1.casf6a8nm5bv.us-east-2.redshift.amazonaws.com" (172.31.17.205), port 5439 failed: FATAL:  password authentication failed for user "aws_user"
+'
+2021-11-28 21:20:30.990807 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-28 21:20:30.990906 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-11-28 21:20:30.991074 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-11-28 21:20:30.991157 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-11-28 21:20:30.991331 (ThreadPoolExecutor-0_0): On list_dev: No close available on handle
+2021-11-28 21:20:30.992116 (MainThread): Connection 'master' was properly closed.
+2021-11-28 21:20:30.992319 (MainThread): Connection 'list_dev' was properly closed.
+2021-11-28 21:20:30.992456 (MainThread): ERROR: Database Error
+  connection to server at "redshift-cluster-1.casf6a8nm5bv.us-east-2.redshift.amazonaws.com" (172.31.17.205), port 5439 failed: FATAL:  password authentication failed for user "aws_user"
+  connection to server at "redshift-cluster-1.casf6a8nm5bv.us-east-2.redshift.amazonaws.com" (172.31.17.205), port 5439 failed: FATAL:  password authentication failed for user "aws_user"
+  
+2021-11-28 21:20:30.992685 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca61b670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca570f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91ca570850>]}
+2021-11-28 21:20:30.992929 (MainThread): Flushing usage events
+2021-11-28 21:21:26.558436 (MainThread): Running with dbt=0.21.0
+2021-11-28 21:21:26.771381 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/ubuntu/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-28 21:21:26.771876 (MainThread): Tracking: tracking
+2021-11-28 21:21:26.781143 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6dba3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b418f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b418fd0>]}
+2021-11-28 21:21:26.795251 (MainThread): Partial parsing not enabled
+2021-11-28 21:21:26.803578 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:21:26.804644 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:21:26.832722 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:21:26.845808 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:21:26.846569 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:21:26.847847 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:21:26.869025 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:21:26.871246 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:21:26.872911 (MainThread): Parsing macros/core.sql
+2021-11-28 21:21:26.876475 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-28 21:21:26.878665 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-28 21:21:26.880281 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-28 21:21:26.881456 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-28 21:21:26.882774 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-28 21:21:26.884241 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-28 21:21:26.885716 (MainThread): Parsing macros/etc/query.sql
+2021-11-28 21:21:26.886651 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-28 21:21:26.888388 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-28 21:21:26.889922 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-28 21:21:26.898284 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-28 21:21:26.900805 (MainThread): Parsing macros/adapters/common.sql
+2021-11-28 21:21:26.953330 (MainThread): Parsing macros/materializations/test.sql
+2021-11-28 21:21:26.959919 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-28 21:21:26.969822 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-28 21:21:26.991816 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-28 21:21:27.001550 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-28 21:21:27.020557 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-28 21:21:27.022359 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-28 21:21:27.038819 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-28 21:21:27.040604 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-28 21:21:27.070394 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-28 21:21:27.077599 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-28 21:21:27.081538 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-28 21:21:27.088453 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-28 21:21:27.287678 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:27.301847 (MainThread): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:27.306189 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:27.310083 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:27.314270 (MainThread): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:27.350377 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b33dd60>]}
+2021-11-28 21:21:27.355506 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-11-28 21:21:27.355904 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b33db20>]}
+2021-11-28 21:21:27.356254 (MainThread): Found 5 models, 0 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-28 21:21:27.357813 (MainThread): 
+2021-11-28 21:21:27.358230 (MainThread): Acquiring new redshift connection "master".
+2021-11-28 21:21:27.359448 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_dev".
+2021-11-28 21:21:27.376488 (ThreadPoolExecutor-0_0): Using redshift connection "list_dev".
+2021-11-28 21:21:27.376750 (ThreadPoolExecutor-0_0): On list_dev: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-28 21:21:27.376876 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-28 21:21:27.376961 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:27.399353 (ThreadPoolExecutor-0_0): SQL status: SELECT in 0.02 seconds
+2021-11-28 21:21:27.401143 (ThreadPoolExecutor-0_0): On list_dev: Close
+2021-11-28 21:21:27.402800 (ThreadPoolExecutor-1_0): Acquiring new redshift connection "list_dev_tickit".
+2021-11-28 21:21:27.412856 (ThreadPoolExecutor-1_0): Using redshift connection "list_dev_tickit".
+2021-11-28 21:21:27.413074 (ThreadPoolExecutor-1_0): On list_dev_tickit: BEGIN
+2021-11-28 21:21:27.413183 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-11-28 21:21:27.413265 (ThreadPoolExecutor-1_0): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:27.429660 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:27.429926 (ThreadPoolExecutor-1_0): Using redshift connection "list_dev_tickit".
+2021-11-28 21:21:27.430044 (ThreadPoolExecutor-1_0): On list_dev_tickit: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev_tickit"} */
+select
+      'dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'tickit'
+    union all
+    select
+      'dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'tickit'
+  
+2021-11-28 21:21:27.440653 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.01 seconds
+2021-11-28 21:21:27.441962 (ThreadPoolExecutor-1_0): On list_dev_tickit: ROLLBACK
+2021-11-28 21:21:27.443584 (ThreadPoolExecutor-1_0): On list_dev_tickit: Close
+2021-11-28 21:21:27.448081 (MainThread): Using redshift connection "master".
+2021-11-28 21:21:27.454977 (MainThread): On master: BEGIN
+2021-11-28 21:21:27.455174 (MainThread): Opening a new connection, currently in state init
+2021-11-28 21:21:27.455261 (MainThread): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:27.472001 (MainThread): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:27.472319 (MainThread): Using redshift connection "master".
+2021-11-28 21:21:27.472446 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-11-28 21:21:27.490538 (MainThread): SQL status: SELECT in 0.02 seconds
+2021-11-28 21:21:27.492095 (MainThread): On master: ROLLBACK
+2021-11-28 21:21:27.493709 (MainThread): Using redshift connection "master".
+2021-11-28 21:21:27.493853 (MainThread): On master: BEGIN
+2021-11-28 21:21:27.496661 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:27.496825 (MainThread): On master: COMMIT
+2021-11-28 21:21:27.496916 (MainThread): Using redshift connection "master".
+2021-11-28 21:21:27.496998 (MainThread): On master: COMMIT
+2021-11-28 21:21:27.498498 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:27.498675 (MainThread): On master: Close
+2021-11-28 21:21:27.499212 (MainThread): 21:21:27 | Concurrency: 4 threads (target='dev')
+2021-11-28 21:21:27.499446 (MainThread): 21:21:27 | 
+2021-11-28 21:21:27.502010 (Thread-1): Began running node model.dbt_dags.all_gross_sales_model
+2021-11-28 21:21:27.502358 (Thread-1): 21:21:27 | 1 of 5 START table model tickit.all_gross_sales_model................ [RUN]
+2021-11-28 21:21:27.502739 (Thread-1): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:27.502934 (Thread-2): Began running node model.dbt_dags.top_buyers_by_quantity_model
+2021-11-28 21:21:27.503192 (Thread-1): Compiling model.dbt_dags.all_gross_sales_model
+2021-11-28 21:21:27.503517 (Thread-2): 21:21:27 | 2 of 5 START table model tickit.top_buyers_by_quantity_model......... [RUN]
+2021-11-28 21:21:27.507331 (Thread-2): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:27.506712 (Thread-1): Writing injected SQL for node "model.dbt_dags.all_gross_sales_model"
+2021-11-28 21:21:27.507486 (Thread-2): Compiling model.dbt_dags.top_buyers_by_quantity_model
+2021-11-28 21:21:27.509912 (Thread-2): Writing injected SQL for node "model.dbt_dags.top_buyers_by_quantity_model"
+2021-11-28 21:21:27.510361 (Thread-2): finished collecting timing info
+2021-11-28 21:21:27.540832 (Thread-2): Writing runtime SQL for node "model.dbt_dags.top_buyers_by_quantity_model"
+2021-11-28 21:21:27.541272 (Thread-1): finished collecting timing info
+2021-11-28 21:21:27.543759 (Thread-1): Writing runtime SQL for node "model.dbt_dags.all_gross_sales_model"
+2021-11-28 21:21:27.544236 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:27.545046 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: BEGIN
+2021-11-28 21:21:27.545190 (Thread-2): Opening a new connection, currently in state init
+2021-11-28 21:21:27.545290 (Thread-2): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:27.545649 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:27.545786 (Thread-1): On model.dbt_dags.all_gross_sales_model: BEGIN
+2021-11-28 21:21:27.545889 (Thread-1): Opening a new connection, currently in state closed
+2021-11-28 21:21:27.545973 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:27.568820 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:27.569077 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:27.569178 (Thread-1): On model.dbt_dags.all_gross_sales_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.all_gross_sales_model"} */
+
+
+  create  table
+    "dev"."tickit"."all_gross_sales_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    All time gross sales.
+*/
+
+
+
+SELECT eventid, sum(pricepaid) total_price
+FROM sales
+GROUP BY eventid
+  );
+2021-11-28 21:21:27.569943 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:27.570086 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:27.570170 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_buyers_by_quantity_model"} */
+
+
+  create  table
+    "dev"."tickit"."top_buyers_by_quantity_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Find top 10 buyers by quantity.
+*/
+
+
+
+SELECT buyerid, sum(qtysold) total_quantity
+FROM sales
+GROUP BY buyerid
+ORDER BY total_quantity DESC
+LIMIT 10
+  );
+2021-11-28 21:21:28.263189 (Thread-1): SQL status: SELECT in 0.69 seconds
+2021-11-28 21:21:28.269294 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:28.269505 (Thread-1): On model.dbt_dags.all_gross_sales_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.all_gross_sales_model"} */
+alter table "dev"."tickit"."all_gross_sales_model__dbt_tmp" rename to "all_gross_sales_model"
+2021-11-28 21:21:28.271906 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-28 21:21:28.283422 (Thread-1): On model.dbt_dags.all_gross_sales_model: COMMIT
+2021-11-28 21:21:28.283659 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:28.283752 (Thread-1): On model.dbt_dags.all_gross_sales_model: COMMIT
+2021-11-28 21:21:28.324281 (Thread-1): SQL status: COMMIT in 0.04 seconds
+2021-11-28 21:21:28.324796 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:28.324949 (Thread-1): On model.dbt_dags.all_gross_sales_model: BEGIN
+2021-11-28 21:21:28.326813 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:28.331973 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:28.332191 (Thread-1): On model.dbt_dags.all_gross_sales_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.all_gross_sales_model"} */
+drop table if exists "dev"."tickit"."all_gross_sales_model__dbt_backup" cascade
+2021-11-28 21:21:28.333904 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2021-11-28 21:21:28.334816 (Thread-1): On model.dbt_dags.all_gross_sales_model: COMMIT
+2021-11-28 21:21:28.335290 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:28.335418 (Thread-1): On model.dbt_dags.all_gross_sales_model: COMMIT
+2021-11-28 21:21:28.338912 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:28.339057 (Thread-1): Using redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:21:28.339141 (Thread-1): On model.dbt_dags.all_gross_sales_model: BEGIN
+2021-11-28 21:21:28.340928 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:28.343009 (Thread-1): finished collecting timing info
+2021-11-28 21:21:28.343189 (Thread-1): On model.dbt_dags.all_gross_sales_model: ROLLBACK
+2021-11-28 21:21:28.344664 (Thread-1): On model.dbt_dags.all_gross_sales_model: Close
+2021-11-28 21:21:28.345325 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6aa8abe0>]}
+2021-11-28 21:21:28.345742 (Thread-1): 21:21:28 | 1 of 5 OK created table model tickit.all_gross_sales_model........... [SELECT in 0.84s]
+2021-11-28 21:21:28.345935 (Thread-1): Finished running node model.dbt_dags.all_gross_sales_model
+2021-11-28 21:21:28.346494 (Thread-4): Began running node model.dbt_dags.percentile_sales_model
+2021-11-28 21:21:28.346885 (Thread-4): 21:21:28 | 3 of 5 START table model tickit.percentile_sales_model............... [RUN]
+2021-11-28 21:21:28.347263 (Thread-4): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:28.347410 (Thread-4): Compiling model.dbt_dags.percentile_sales_model
+2021-11-28 21:21:28.350194 (Thread-4): Writing injected SQL for node "model.dbt_dags.percentile_sales_model"
+2021-11-28 21:21:28.350501 (Thread-4): finished collecting timing info
+2021-11-28 21:21:28.354534 (Thread-4): Writing runtime SQL for node "model.dbt_dags.percentile_sales_model"
+2021-11-28 21:21:28.354915 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:28.355031 (Thread-4): On model.dbt_dags.percentile_sales_model: BEGIN
+2021-11-28 21:21:28.355128 (Thread-4): Opening a new connection, currently in state init
+2021-11-28 21:21:28.355209 (Thread-4): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:28.374240 (Thread-4): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:28.374548 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:28.374661 (Thread-4): On model.dbt_dags.percentile_sales_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.percentile_sales_model"} */
+
+
+  create  table
+    "dev"."tickit"."percentile_sales_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Get percentiles of all time gross sales.
+*/
+
+
+
+SELECT eventid, total_price, ntile(1000) over(order by total_price desc) as percentile 
+FROM "dev"."tickit"."all_gross_sales_model"
+  );
+2021-11-28 21:21:33.984774 (Thread-2): SQL status: SELECT in 6.41 seconds
+2021-11-28 21:21:33.987170 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:33.987450 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_buyers_by_quantity_model"} */
+alter table "dev"."tickit"."top_buyers_by_quantity_model__dbt_tmp" rename to "top_buyers_by_quantity_model"
+2021-11-28 21:21:33.995220 (Thread-2): SQL status: ALTER TABLE in 0.01 seconds
+2021-11-28 21:21:33.996979 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: COMMIT
+2021-11-28 21:21:33.997176 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:33.997269 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: COMMIT
+2021-11-28 21:21:34.058491 (Thread-2): SQL status: COMMIT in 0.06 seconds
+2021-11-28 21:21:34.059025 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:34.059167 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: BEGIN
+2021-11-28 21:21:34.062188 (Thread-2): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:34.063798 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:34.063953 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_buyers_by_quantity_model"} */
+drop table if exists "dev"."tickit"."top_buyers_by_quantity_model__dbt_backup" cascade
+2021-11-28 21:21:34.072372 (Thread-2): SQL status: DROP TABLE in 0.01 seconds
+2021-11-28 21:21:34.073439 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: COMMIT
+2021-11-28 21:21:34.073593 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:34.073684 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: COMMIT
+2021-11-28 21:21:34.078709 (Thread-2): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:34.078990 (Thread-2): Using redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:21:34.079113 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: BEGIN
+2021-11-28 21:21:34.081562 (Thread-2): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:34.082278 (Thread-2): finished collecting timing info
+2021-11-28 21:21:34.082452 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: ROLLBACK
+2021-11-28 21:21:34.084746 (Thread-2): On model.dbt_dags.top_buyers_by_quantity_model: Close
+2021-11-28 21:21:34.085833 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6aab42b0>]}
+2021-11-28 21:21:34.086241 (Thread-2): 21:21:34 | 2 of 5 OK created table model tickit.top_buyers_by_quantity_model.... [SELECT in 6.58s]
+2021-11-28 21:21:34.086809 (Thread-2): Finished running node model.dbt_dags.top_buyers_by_quantity_model
+2021-11-28 21:21:34.087371 (Thread-1): Began running node model.dbt_dags.top_buyer_data_model
+2021-11-28 21:21:34.087664 (Thread-1): 21:21:34 | 4 of 5 START table model tickit.top_buyer_data_model................. [RUN]
+2021-11-28 21:21:34.088066 (Thread-1): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:34.088357 (Thread-1): Compiling model.dbt_dags.top_buyer_data_model
+2021-11-28 21:21:34.092268 (Thread-1): Writing injected SQL for node "model.dbt_dags.top_buyer_data_model"
+2021-11-28 21:21:34.092566 (Thread-1): finished collecting timing info
+2021-11-28 21:21:34.096778 (Thread-1): Writing runtime SQL for node "model.dbt_dags.top_buyer_data_model"
+2021-11-28 21:21:34.097215 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:34.097338 (Thread-1): On model.dbt_dags.top_buyer_data_model: BEGIN
+2021-11-28 21:21:34.097559 (Thread-1): Opening a new connection, currently in state closed
+2021-11-28 21:21:34.097702 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:34.129133 (Thread-1): SQL status: BEGIN in 0.03 seconds
+2021-11-28 21:21:34.129414 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:34.129519 (Thread-1): On model.dbt_dags.top_buyer_data_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_buyer_data_model"} */
+
+
+  create  table
+    "dev"."tickit"."top_buyer_data_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Get data on top 10 buyers by quantity.
+*/
+
+
+
+SELECT firstname, lastname, total_quantity 
+FROM "dev"."tickit"."top_buyers_by_quantity_model" q, users
+WHERE q.buyerid = userid
+ORDER BY q.total_quantity DESC
+  );
+2021-11-28 21:21:40.124040 (Thread-1): SQL status: SELECT in 5.99 seconds
+2021-11-28 21:21:40.127020 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:40.128018 (Thread-1): On model.dbt_dags.top_buyer_data_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_buyer_data_model"} */
+alter table "dev"."tickit"."top_buyer_data_model__dbt_tmp" rename to "top_buyer_data_model"
+2021-11-28 21:21:40.131398 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-28 21:21:40.132885 (Thread-1): On model.dbt_dags.top_buyer_data_model: COMMIT
+2021-11-28 21:21:40.133150 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:40.133252 (Thread-1): On model.dbt_dags.top_buyer_data_model: COMMIT
+2021-11-28 21:21:40.167971 (Thread-1): SQL status: COMMIT in 0.03 seconds
+2021-11-28 21:21:40.168569 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:40.168706 (Thread-1): On model.dbt_dags.top_buyer_data_model: BEGIN
+2021-11-28 21:21:40.171239 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:40.173195 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:40.173417 (Thread-1): On model.dbt_dags.top_buyer_data_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_buyer_data_model"} */
+drop table if exists "dev"."tickit"."top_buyer_data_model__dbt_backup" cascade
+2021-11-28 21:21:40.175669 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2021-11-28 21:21:40.176639 (Thread-1): On model.dbt_dags.top_buyer_data_model: COMMIT
+2021-11-28 21:21:40.176781 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:40.176870 (Thread-1): On model.dbt_dags.top_buyer_data_model: COMMIT
+2021-11-28 21:21:40.181619 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:40.181862 (Thread-1): Using redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:21:40.181959 (Thread-1): On model.dbt_dags.top_buyer_data_model: BEGIN
+2021-11-28 21:21:40.184360 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:40.185116 (Thread-1): finished collecting timing info
+2021-11-28 21:21:40.185308 (Thread-1): On model.dbt_dags.top_buyer_data_model: ROLLBACK
+2021-11-28 21:21:40.187382 (Thread-1): On model.dbt_dags.top_buyer_data_model: Close
+2021-11-28 21:21:40.188051 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6aa8af70>]}
+2021-11-28 21:21:40.188607 (Thread-1): 21:21:40 | 4 of 5 OK created table model tickit.top_buyer_data_model............ [SELECT in 6.10s]
+2021-11-28 21:21:40.188803 (Thread-1): Finished running node model.dbt_dags.top_buyer_data_model
+2021-11-28 21:21:43.420507 (Thread-4): SQL status: SELECT in 15.05 seconds
+2021-11-28 21:21:43.422839 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:43.423022 (Thread-4): On model.dbt_dags.percentile_sales_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.percentile_sales_model"} */
+alter table "dev"."tickit"."percentile_sales_model__dbt_tmp" rename to "percentile_sales_model"
+2021-11-28 21:21:43.425611 (Thread-4): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-28 21:21:43.426961 (Thread-4): On model.dbt_dags.percentile_sales_model: COMMIT
+2021-11-28 21:21:43.427316 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:43.427414 (Thread-4): On model.dbt_dags.percentile_sales_model: COMMIT
+2021-11-28 21:21:43.456181 (Thread-4): SQL status: COMMIT in 0.03 seconds
+2021-11-28 21:21:43.456695 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:43.456824 (Thread-4): On model.dbt_dags.percentile_sales_model: BEGIN
+2021-11-28 21:21:43.458742 (Thread-4): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:43.460386 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:43.460536 (Thread-4): On model.dbt_dags.percentile_sales_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.percentile_sales_model"} */
+drop table if exists "dev"."tickit"."percentile_sales_model__dbt_backup" cascade
+2021-11-28 21:21:43.462314 (Thread-4): SQL status: DROP TABLE in 0.00 seconds
+2021-11-28 21:21:43.463497 (Thread-4): On model.dbt_dags.percentile_sales_model: COMMIT
+2021-11-28 21:21:43.463633 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:43.463725 (Thread-4): On model.dbt_dags.percentile_sales_model: COMMIT
+2021-11-28 21:21:43.467186 (Thread-4): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:43.467369 (Thread-4): Using redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:21:43.467463 (Thread-4): On model.dbt_dags.percentile_sales_model: BEGIN
+2021-11-28 21:21:43.469141 (Thread-4): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:43.470051 (Thread-4): finished collecting timing info
+2021-11-28 21:21:43.470224 (Thread-4): On model.dbt_dags.percentile_sales_model: ROLLBACK
+2021-11-28 21:21:43.471757 (Thread-4): On model.dbt_dags.percentile_sales_model: Close
+2021-11-28 21:21:43.472478 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6aa8a9a0>]}
+2021-11-28 21:21:43.472882 (Thread-4): 21:21:43 | 3 of 5 OK created table model tickit.percentile_sales_model.......... [SELECT in 15.13s]
+2021-11-28 21:21:43.473062 (Thread-4): Finished running node model.dbt_dags.percentile_sales_model
+2021-11-28 21:21:43.473815 (Thread-2): Began running node model.dbt_dags.top_sales_99.9_percentile_model
+2021-11-28 21:21:43.474143 (Thread-2): 21:21:43 | 5 of 5 START table model tickit.top_sales_99.9_percentile_model...... [RUN]
+2021-11-28 21:21:43.474503 (Thread-2): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:43.474651 (Thread-2): Compiling model.dbt_dags.top_sales_99.9_percentile_model
+2021-11-28 21:21:43.478398 (Thread-2): Writing injected SQL for node "model.dbt_dags.top_sales_99.9_percentile_model"
+2021-11-28 21:21:43.479000 (Thread-2): finished collecting timing info
+2021-11-28 21:21:43.481790 (Thread-2): Writing runtime SQL for node "model.dbt_dags.top_sales_99.9_percentile_model"
+2021-11-28 21:21:43.482152 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:43.482267 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: BEGIN
+2021-11-28 21:21:43.482367 (Thread-2): Opening a new connection, currently in state closed
+2021-11-28 21:21:43.482447 (Thread-2): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:43.502374 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:43.502658 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:43.502761 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_sales_99.9_percentile_model"} */
+
+
+  create  table
+    "dev"."tickit"."top_sales_99.9_percentile_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Find events in 99.9 percentile
+*/
+
+
+
+SELECT eventname, total_price 
+FROM "dev"."tickit"."percentile_sales_model" q, event e
+WHERE q.eventid = e.eventid
+AND percentile = 1
+ORDER BY total_price DESC
+  );
+2021-11-28 21:21:54.407898 (Thread-2): SQL status: SELECT in 10.90 seconds
+2021-11-28 21:21:54.415064 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:54.415369 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_sales_99.9_percentile_model"} */
+alter table "dev"."tickit"."top_sales_99.9_percentile_model__dbt_tmp" rename to "top_sales_99.9_percentile_model"
+2021-11-28 21:21:54.417731 (Thread-2): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-28 21:21:54.419127 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: COMMIT
+2021-11-28 21:21:54.419740 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:54.419890 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: COMMIT
+2021-11-28 21:21:54.456992 (Thread-2): SQL status: COMMIT in 0.04 seconds
+2021-11-28 21:21:54.457467 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:54.457600 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: BEGIN
+2021-11-28 21:21:54.459467 (Thread-2): SQL status: BEGIN in 0.00 seconds
+2021-11-28 21:21:54.461196 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:54.461353 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_dags.top_sales_99.9_percentile_model"} */
+drop table if exists "dev"."tickit"."top_sales_99.9_percentile_model__dbt_backup" cascade
+2021-11-28 21:21:54.462977 (Thread-2): SQL status: DROP TABLE in 0.00 seconds
+2021-11-28 21:21:54.463816 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: COMMIT
+2021-11-28 21:21:54.463946 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:54.464039 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: COMMIT
+2021-11-28 21:21:54.467539 (Thread-2): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:54.467701 (Thread-2): Using redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:21:54.467863 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: BEGIN
+2021-11-28 21:21:54.473566 (Thread-2): SQL status: BEGIN in 0.01 seconds
+2021-11-28 21:21:54.474248 (Thread-2): finished collecting timing info
+2021-11-28 21:21:54.474424 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: ROLLBACK
+2021-11-28 21:21:54.475917 (Thread-2): On model.dbt_dags.top_sales_99.9_percentile_model: Close
+2021-11-28 21:21:54.476607 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ddab7f34-ae93-426a-a94e-7c16f2bb4e12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6aa97ee0>]}
+2021-11-28 21:21:54.477004 (Thread-2): 21:21:54 | 5 of 5 OK created table model tickit.top_sales_99.9_percentile_model. [SELECT in 11.00s]
+2021-11-28 21:21:54.477174 (Thread-2): Finished running node model.dbt_dags.top_sales_99.9_percentile_model
+2021-11-28 21:21:54.478539 (MainThread): Acquiring new redshift connection "master".
+2021-11-28 21:21:54.478706 (MainThread): Using redshift connection "master".
+2021-11-28 21:21:54.478801 (MainThread): On master: BEGIN
+2021-11-28 21:21:54.478895 (MainThread): Opening a new connection, currently in state closed
+2021-11-28 21:21:54.478977 (MainThread): Connecting to Redshift using 'database' credentials
+2021-11-28 21:21:54.502074 (MainThread): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:21:54.502346 (MainThread): On master: COMMIT
+2021-11-28 21:21:54.502446 (MainThread): Using redshift connection "master".
+2021-11-28 21:21:54.502538 (MainThread): On master: COMMIT
+2021-11-28 21:21:54.504013 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-11-28 21:21:54.504281 (MainThread): On master: Close
+2021-11-28 21:21:54.506788 (MainThread): 21:21:54 | 
+2021-11-28 21:21:54.507010 (MainThread): 21:21:54 | Finished running 5 table models in 27.15s.
+2021-11-28 21:21:54.507340 (MainThread): Connection 'master' was properly closed.
+2021-11-28 21:21:54.507474 (MainThread): Connection 'model.dbt_dags.top_buyer_data_model' was properly closed.
+2021-11-28 21:21:54.507555 (MainThread): Connection 'model.dbt_dags.top_sales_99.9_percentile_model' was properly closed.
+2021-11-28 21:21:54.507643 (MainThread): Connection 'model.dbt_dags.percentile_sales_model' was properly closed.
+2021-11-28 21:21:54.524137 (MainThread): 
+2021-11-28 21:21:54.525208 (MainThread): Completed successfully
+2021-11-28 21:21:54.525368 (MainThread): 
+Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+2021-11-28 21:21:54.525644 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b33de20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b33fc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6b3883d0>]}
+2021-11-28 21:21:54.525897 (MainThread): Flushing usage events
+2021-11-28 21:32:23.915840 (MainThread): Running with dbt=0.21.0
+2021-11-28 21:32:24.131587 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, greedy=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/ubuntu/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, select=None, selector_name=None, single_threaded=False, state=None, store_failures=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-11-28 21:32:24.132078 (MainThread): Tracking: tracking
+2021-11-28 21:32:24.141393 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5233b2ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520c25e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520c25ee0>]}
+2021-11-28 21:32:24.156075 (MainThread): Partial parsing not enabled
+2021-11-28 21:32:24.164690 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:32:24.165715 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:32:24.193975 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:32:24.207248 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:32:24.208036 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:32:24.209374 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:32:24.230988 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:32:24.233345 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:32:24.235077 (MainThread): Parsing macros/core.sql
+2021-11-28 21:32:24.238761 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-28 21:32:24.241123 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-28 21:32:24.242815 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-28 21:32:24.244031 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-28 21:32:24.245418 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-28 21:32:24.246900 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-28 21:32:24.248407 (MainThread): Parsing macros/etc/query.sql
+2021-11-28 21:32:24.249377 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-28 21:32:24.251166 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-28 21:32:24.252750 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-28 21:32:24.261231 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-28 21:32:24.263754 (MainThread): Parsing macros/adapters/common.sql
+2021-11-28 21:32:24.317048 (MainThread): Parsing macros/materializations/test.sql
+2021-11-28 21:32:24.323710 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-28 21:32:24.333740 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-28 21:32:24.356065 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-28 21:32:24.365967 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-28 21:32:24.385134 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-28 21:32:24.387027 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-28 21:32:24.403852 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-28 21:32:24.405712 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-28 21:32:24.435670 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-28 21:32:24.442932 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-28 21:32:24.446872 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-28 21:32:24.453851 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-28 21:32:24.655541 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:32:24.670324 (MainThread): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:32:24.674748 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:32:24.678773 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:32:24.683009 (MainThread): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:32:24.719643 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '90866a53-72bf-45e9-87bf-4a7c96998d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520b4bc70>]}
+2021-11-28 21:32:24.725025 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-11-28 21:32:24.725438 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '90866a53-72bf-45e9-87bf-4a7c96998d9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520b4ba30>]}
+2021-11-28 21:32:24.725764 (MainThread): Found 5 models, 0 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-28 21:32:24.727137 (MainThread): 
+WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-11-28 21:32:24.731999 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520c25dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520b735b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc520b73430>]}
+2021-11-28 21:32:24.732320 (MainThread): Flushing usage events
+2021-11-28 21:32:24.806393 (MainThread): Connection 'model.dbt_dags.all_gross_sales_model' was properly closed.
+2021-11-28 21:32:49.163028 (MainThread): Running with dbt=0.21.0
+2021-11-28 21:32:49.376761 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/ubuntu/.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2021-11-28 21:32:49.377248 (MainThread): Tracking: tracking
+2021-11-28 21:32:49.386459 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c4a21880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c2294f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c22fd040>]}
+2021-11-28 21:32:49.400541 (MainThread): Partial parsing not enabled
+2021-11-28 21:32:49.408803 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:32:49.409813 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:32:49.437812 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:32:49.450971 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:32:49.451724 (MainThread): Parsing macros/relations.sql
+2021-11-28 21:32:49.453015 (MainThread): Parsing macros/adapters.sql
+2021-11-28 21:32:49.474194 (MainThread): Parsing macros/catalog.sql
+2021-11-28 21:32:49.476424 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-28 21:32:49.478048 (MainThread): Parsing macros/core.sql
+2021-11-28 21:32:49.481601 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-28 21:32:49.483784 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-28 21:32:49.485483 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-28 21:32:49.486667 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-28 21:32:49.487997 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-28 21:32:49.489489 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-28 21:32:49.490966 (MainThread): Parsing macros/etc/query.sql
+2021-11-28 21:32:49.491904 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-28 21:32:49.493648 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-28 21:32:49.495166 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-28 21:32:49.503385 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-28 21:32:49.505855 (MainThread): Parsing macros/adapters/common.sql
+2021-11-28 21:32:49.558370 (MainThread): Parsing macros/materializations/test.sql
+2021-11-28 21:32:49.564933 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-28 21:32:49.574701 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-28 21:32:49.596787 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-28 21:32:49.606622 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-28 21:32:49.625587 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-28 21:32:49.627410 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-28 21:32:49.644089 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-28 21:32:49.646013 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-28 21:32:49.676175 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-28 21:32:49.683371 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-28 21:32:49.687233 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-28 21:32:49.694055 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-28 21:32:49.893238 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:32:49.907849 (MainThread): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:32:49.912505 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:32:49.916663 (MainThread): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:32:49.921150 (MainThread): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:32:49.957811 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '939189aa-e78f-4b4c-8d97-c048fbda99bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c21c2df0>]}
+2021-11-28 21:32:49.963147 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-11-28 21:32:49.963573 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '939189aa-e78f-4b4c-8d97-c048fbda99bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c21c2bb0>]}
+2021-11-28 21:32:49.963907 (MainThread): Found 5 models, 0 tests, 0 snapshots, 0 analyses, 188 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-28 21:32:49.965535 (MainThread): 
+2021-11-28 21:32:49.965991 (MainThread): Acquiring new redshift connection "master".
+2021-11-28 21:32:49.967143 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_dev_tickit".
+2021-11-28 21:32:49.979132 (ThreadPoolExecutor-0_0): Using redshift connection "list_dev_tickit".
+2021-11-28 21:32:49.979351 (ThreadPoolExecutor-0_0): On list_dev_tickit: BEGIN
+2021-11-28 21:32:49.979468 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-28 21:32:49.979553 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-11-28 21:32:50.001057 (ThreadPoolExecutor-0_0): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:32:50.001436 (ThreadPoolExecutor-0_0): Using redshift connection "list_dev_tickit".
+2021-11-28 21:32:50.001747 (ThreadPoolExecutor-0_0): On list_dev_tickit: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "list_dev_tickit"} */
+select
+      'dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'tickit'
+    union all
+    select
+      'dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'tickit'
+  
+2021-11-28 21:32:50.012506 (ThreadPoolExecutor-0_0): SQL status: SELECT in 0.01 seconds
+2021-11-28 21:32:50.015089 (ThreadPoolExecutor-0_0): On list_dev_tickit: ROLLBACK
+2021-11-28 21:32:50.017034 (ThreadPoolExecutor-0_0): On list_dev_tickit: Close
+2021-11-28 21:32:50.021920 (MainThread): Using redshift connection "master".
+2021-11-28 21:32:50.022131 (MainThread): On master: BEGIN
+2021-11-28 21:32:50.022244 (MainThread): Opening a new connection, currently in state init
+2021-11-28 21:32:50.022328 (MainThread): Connecting to Redshift using 'database' credentials
+2021-11-28 21:32:50.043014 (MainThread): SQL status: BEGIN in 0.02 seconds
+2021-11-28 21:32:50.043305 (MainThread): Using redshift connection "master".
+2021-11-28 21:32:50.043426 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-11-28 21:32:50.069976 (MainThread): SQL status: SELECT in 0.03 seconds
+2021-11-28 21:32:50.071339 (MainThread): On master: ROLLBACK
+2021-11-28 21:32:50.073726 (MainThread): On master: Close
+2021-11-28 21:32:50.074421 (MainThread): 21:32:50 | Concurrency: 4 threads (target='dev')
+2021-11-28 21:32:50.074648 (MainThread): 21:32:50 | 
+2021-11-28 21:32:50.077768 (Thread-1): Began running node model.dbt_dags.all_gross_sales_model
+2021-11-28 21:32:50.078002 (Thread-2): Began running node model.dbt_dags.top_buyers_by_quantity_model
+2021-11-28 21:32:50.078710 (Thread-2): Acquiring new redshift connection "model.dbt_dags.top_buyers_by_quantity_model".
+2021-11-28 21:32:50.078857 (Thread-2): Compiling model.dbt_dags.top_buyers_by_quantity_model
+2021-11-28 21:32:50.078415 (Thread-1): Acquiring new redshift connection "model.dbt_dags.all_gross_sales_model".
+2021-11-28 21:32:50.081615 (Thread-2): Writing injected SQL for node "model.dbt_dags.top_buyers_by_quantity_model"
+2021-11-28 21:32:50.081907 (Thread-1): Compiling model.dbt_dags.all_gross_sales_model
+2021-11-28 21:32:50.085043 (Thread-1): Writing injected SQL for node "model.dbt_dags.all_gross_sales_model"
+2021-11-28 21:32:50.085538 (Thread-2): finished collecting timing info
+2021-11-28 21:32:50.085821 (Thread-2): finished collecting timing info
+2021-11-28 21:32:50.086240 (Thread-2): Finished running node model.dbt_dags.top_buyers_by_quantity_model
+2021-11-28 21:32:50.086435 (Thread-1): finished collecting timing info
+2021-11-28 21:32:50.086745 (Thread-1): finished collecting timing info
+2021-11-28 21:32:50.087282 (Thread-1): Finished running node model.dbt_dags.all_gross_sales_model
+2021-11-28 21:32:50.087691 (Thread-4): Began running node model.dbt_dags.top_buyer_data_model
+2021-11-28 21:32:50.088173 (Thread-4): Acquiring new redshift connection "model.dbt_dags.top_buyer_data_model".
+2021-11-28 21:32:50.088400 (Thread-2): Began running node model.dbt_dags.percentile_sales_model
+2021-11-28 21:32:50.088566 (Thread-4): Compiling model.dbt_dags.top_buyer_data_model
+2021-11-28 21:32:50.091737 (Thread-4): Writing injected SQL for node "model.dbt_dags.top_buyer_data_model"
+2021-11-28 21:32:50.088872 (Thread-2): Acquiring new redshift connection "model.dbt_dags.percentile_sales_model".
+2021-11-28 21:32:50.092077 (Thread-4): finished collecting timing info
+2021-11-28 21:32:50.092510 (Thread-4): finished collecting timing info
+2021-11-28 21:32:50.092823 (Thread-4): Finished running node model.dbt_dags.top_buyer_data_model
+2021-11-28 21:32:50.092330 (Thread-2): Compiling model.dbt_dags.percentile_sales_model
+2021-11-28 21:32:50.095760 (Thread-2): Writing injected SQL for node "model.dbt_dags.percentile_sales_model"
+2021-11-28 21:32:50.096270 (Thread-2): finished collecting timing info
+2021-11-28 21:32:50.096454 (Thread-2): finished collecting timing info
+2021-11-28 21:32:50.096768 (Thread-2): Finished running node model.dbt_dags.percentile_sales_model
+2021-11-28 21:32:50.097319 (Thread-3): Began running node model.dbt_dags.top_sales_99.9_percentile_model
+2021-11-28 21:32:50.097982 (Thread-3): Acquiring new redshift connection "model.dbt_dags.top_sales_99.9_percentile_model".
+2021-11-28 21:32:50.098135 (Thread-3): Compiling model.dbt_dags.top_sales_99.9_percentile_model
+2021-11-28 21:32:50.100825 (Thread-3): Writing injected SQL for node "model.dbt_dags.top_sales_99.9_percentile_model"
+2021-11-28 21:32:50.101172 (Thread-3): finished collecting timing info
+2021-11-28 21:32:50.101338 (Thread-3): finished collecting timing info
+2021-11-28 21:32:50.101652 (Thread-3): Finished running node model.dbt_dags.top_sales_99.9_percentile_model
+2021-11-28 21:32:50.102723 (MainThread): Connection 'master' was properly closed.
+2021-11-28 21:32:50.102869 (MainThread): Connection 'model.dbt_dags.all_gross_sales_model' was properly closed.
+2021-11-28 21:32:50.102956 (MainThread): Connection 'model.dbt_dags.percentile_sales_model' was properly closed.
+2021-11-28 21:32:50.103035 (MainThread): Connection 'model.dbt_dags.top_buyer_data_model' was properly closed.
+2021-11-28 21:32:50.103110 (MainThread): Connection 'model.dbt_dags.top_sales_99.9_percentile_model' was properly closed.
+2021-11-28 21:32:50.107785 (MainThread): 21:32:50 | Done.
+2021-11-28 21:32:50.109892 (MainThread): Acquiring new redshift connection "generate_catalog".
+2021-11-28 21:32:50.110056 (MainThread): 21:32:50 | Building catalog
+2021-11-28 21:32:50.111659 (ThreadPoolExecutor-1_0): Acquiring new redshift connection "dev.information_schema".
+2021-11-28 21:32:50.126226 (ThreadPoolExecutor-1_0): Using redshift connection "dev.information_schema".
+2021-11-28 21:32:50.126449 (ThreadPoolExecutor-1_0): On dev.information_schema: BEGIN
+2021-11-28 21:32:50.126565 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-11-28 21:32:50.126648 (ThreadPoolExecutor-1_0): Connecting to Redshift using 'database' credentials
+2021-11-28 21:32:50.153139 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.03 seconds
+2021-11-28 21:32:50.153401 (ThreadPoolExecutor-1_0): Using redshift connection "dev.information_schema".
+2021-11-28 21:32:50.153500 (ThreadPoolExecutor-1_0): On dev.information_schema: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "dev.information_schema"} */
+
+    
+
+    with late_binding as (
+      select
+        'dev'::varchar as table_database,
+        table_schema,
+        table_name,
+        'LATE BINDING VIEW'::varchar as table_type,
+        null::text as table_comment,
+
+        column_name,
+        column_index,
+        column_type,
+        null::text as column_comment
+      from pg_get_late_binding_view_cols()
+        cols(table_schema name, table_name name, column_name name,
+             column_type varchar,
+             column_index int)
+        order by "column_index"
+    ),
+
+    early_binding as (
+        select
+            'dev'::varchar as table_database,
+            sch.nspname as table_schema,
+            tbl.relname as table_name,
+            case tbl.relkind
+                when 'v' then 'VIEW'
+                else 'BASE TABLE'
+            end as table_type,
+            tbl_desc.description as table_comment,
+            col.attname as column_name,
+            col.attnum as column_index,
+            pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+            col_desc.description as column_comment
+
+        from pg_catalog.pg_namespace sch
+        join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+        join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+        left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+        left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+        where (upper(sch.nspname) = upper('tickit'))
+            and tbl.relkind in ('r', 'v', 'f', 'p')
+            and col.attnum > 0
+            and not col.attisdropped
+    ),
+
+    table_owners as (
+
+        select
+            'dev'::varchar as table_database,
+            schemaname as table_schema,
+            tablename as table_name,
+            tableowner as table_owner
+
+        from pg_tables
+
+        union all
+
+        select
+            'dev'::varchar as table_database,
+            schemaname as table_schema,
+            viewname as table_name,
+            viewowner as table_owner
+
+        from pg_views
+
+    ),
+
+    unioned as (
+
+        select *
+        from early_binding
+
+        union all
+
+        select *
+        from late_binding
+
+    )
+
+    select *,
+        table_database || '.' || table_schema || '.' || table_name as table_id
+
+    from unioned
+    join table_owners using (table_database, table_schema, table_name)
+
+    where (upper(table_schema) = upper('tickit'))
+
+    order by "column_index"
+2021-11-28 21:32:50.225343 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.07 seconds
+2021-11-28 21:32:50.229824 (ThreadPoolExecutor-1_0): Using redshift connection "dev.information_schema".
+2021-11-28 21:32:50.230029 (ThreadPoolExecutor-1_0): On dev.information_schema: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "dev.information_schema"} */
+select has_table_privilege(current_user, 'svv_table_info', 'SELECT') as can_select
+2021-11-28 21:32:50.232224 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.00 seconds
+2021-11-28 21:32:50.236855 (ThreadPoolExecutor-1_0): Using redshift connection "dev.information_schema".
+2021-11-28 21:32:50.237057 (ThreadPoolExecutor-1_0): On dev.information_schema: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "dev", "connection_name": "dev.information_schema"} */
+select
+        "database" || '.' || "schema" || '.' || "table" as table_id,
+
+        'Encoded'::text as "stats:encoded:label",
+        encoded as "stats:encoded:value",
+        'Indicates whether any column in the table has compression encoding defined.'::text as "stats:encoded:description",
+        true as "stats:encoded:include",
+
+        'Dist Style' as "stats:diststyle:label",
+        diststyle as "stats:diststyle:value",
+        'Distribution style or distribution key column, if key distribution is defined.'::text as "stats:diststyle:description",
+        true as "stats:diststyle:include",
+
+        'Sort Key 1' as "stats:sortkey1:label",
+        -- handle 0xFF byte in response for interleaved sort styles
+        case
+            when sortkey1 like 'INTERLEAVED%' then 'INTERLEAVED'::text
+            else sortkey1
+        end as "stats:sortkey1:value",
+        'First column in the sort key.'::text as "stats:sortkey1:description",
+        (sortkey1 is not null) as "stats:sortkey1:include",
+
+        'Max Varchar' as "stats:max_varchar:label",
+        max_varchar as "stats:max_varchar:value",
+        'Size of the largest column that uses a VARCHAR data type.'::text as "stats:max_varchar:description",
+        true as "stats:max_varchar:include",
+
+        -- exclude this, as the data is strangely returned with null-byte characters
+        'Sort Key 1 Encoding' as "stats:sortkey1_enc:label",
+        sortkey1_enc as "stats:sortkey1_enc:value",
+        'Compression encoding of the first column in the sort key.' as "stats:sortkey1_enc:description",
+        false as "stats:sortkey1_enc:include",
+
+        '# Sort Keys' as "stats:sortkey_num:label",
+        sortkey_num as "stats:sortkey_num:value",
+        'Number of columns defined as sort keys.' as "stats:sortkey_num:description",
+        (sortkey_num > 0) as "stats:sortkey_num:include",
+
+        'Approximate Size' as "stats:size:label",
+        size * 1000000 as "stats:size:value",
+        'Approximate size of the table, calculated from a count of 1MB blocks'::text as "stats:size:description",
+        true as "stats:size:include",
+
+        'Disk Utilization' as "stats:pct_used:label",
+        pct_used / 100.0 as "stats:pct_used:value",
+        'Percent of available space that is used by the table.'::text as "stats:pct_used:description",
+        true as "stats:pct_used:include",
+
+        'Unsorted %' as "stats:unsorted:label",
+        unsorted / 100.0 as "stats:unsorted:value",
+        'Percent of unsorted rows in the table.'::text as "stats:unsorted:description",
+        (unsorted is not null) as "stats:unsorted:include",
+
+        'Stats Off' as "stats:stats_off:label",
+        stats_off as "stats:stats_off:value",
+        'Number that indicates how stale the table statistics are; 0 is current, 100 is out of date.'::text as "stats:stats_off:description",
+        true as "stats:stats_off:include",
+
+        'Approximate Row Count' as "stats:rows:label",
+        tbl_rows as "stats:rows:value",
+        'Approximate number of rows in the table. This value includes rows marked for deletion, but not yet vacuumed.'::text as "stats:rows:description",
+        true as "stats:rows:include",
+
+        'Sort Key Skew' as "stats:skew_sortkey1:label",
+        skew_sortkey1 as "stats:skew_sortkey1:value",
+        'Ratio of the size of the largest non-sort key column to the size of the first column of the sort key.'::text as "stats:skew_sortkey1:description",
+        (skew_sortkey1 is not null) as "stats:skew_sortkey1:include",
+
+        'Skew Rows' as "stats:skew_rows:label",
+        skew_rows as "stats:skew_rows:value",
+        'Ratio of the number of rows in the slice with the most rows to the number of rows in the slice with the fewest rows.'::text as "stats:skew_rows:description",
+        (skew_rows is not null) as "stats:skew_rows:include"
+
+    from svv_table_info
+    where (upper(schema) = upper('tickit'))
+2021-11-28 21:32:56.268005 (ThreadPoolExecutor-1_0): SQL status: SELECT in 6.03 seconds
+2021-11-28 21:32:56.284938 (ThreadPoolExecutor-1_0): On dev.information_schema: ROLLBACK
+2021-11-28 21:32:56.287486 (ThreadPoolExecutor-1_0): On dev.information_schema: Close
+2021-11-28 21:32:56.306557 (MainThread): 21:32:56 | Catalog written to /home/ubuntu/dbt_project/target/catalog.json
+2021-11-28 21:32:56.306973 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c4a21880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c193a130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0c193a0a0>]}
+2021-11-28 21:32:56.307228 (MainThread): Flushing usage events
+2021-11-28 21:32:56.383107 (MainThread): Connection 'generate_catalog' was properly closed.
+2021-11-28 21:32:56.383596 (MainThread): Connection 'dev.information_schema' was properly closed.
